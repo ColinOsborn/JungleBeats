@@ -1,5 +1,5 @@
 require 'minitest'
-require './linklist'
+require './link_list'
 require "minitest/autorun"
 require "minitest/pride"
 require 'pry'
@@ -21,8 +21,15 @@ class NodeTest < Minitest::Test
 
   def test_node_link
     node = Node.new(2, @n)
-    binding.pry
     assert_equal @n, node.link
   end
+end
 
+class LinkListTest < Minitest::Test
+   def test_linklist_can_create_head
+     start = LinkList.new("test")
+     assert_equal "test", start.head
+   end
+
+   
 end

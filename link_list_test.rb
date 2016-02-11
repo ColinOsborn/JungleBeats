@@ -31,7 +31,4 @@ class LinkListTest < Minitest::Test
      assert_equal "test", start.head
    end
 
-   def
-   end
-
 end

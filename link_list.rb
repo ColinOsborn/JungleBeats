@@ -2,7 +2,7 @@ require 'pry'
 
 class Node
   # attr_reader :data
-  attr_accessor :link :data
+  attr_accessor :link, :data
 
   def initialize(data=nil, link=nil)
     @data = data
@@ -13,7 +13,7 @@ end
 class LinkList
 
   def initialize(head)
-    @head = head.split
+    @head = head
   end
 
   def head
@@ -23,6 +23,8 @@ end
 
 #head should always be nil, because think of it as an empty array.
 # That son of a bitch needs to open so that it start the chain
+# but it will also need to split up the strings coming into
+
 
 # After Head - You'll need append
 ### Append will then talk to Head
@@ -36,4 +38,4 @@ end
 # Then essential append will loop through the incoming string
 ## and strung out words, to fill out the created nodes.
 # a while loop seems practical since, as soon as the string
-## ends, it will then become false
+## ends, it will then become false so no worry about an infinite loop

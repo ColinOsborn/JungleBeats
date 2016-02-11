@@ -31,4 +31,9 @@ class LinkListTest < Minitest::Test
      assert_equal "test", start.head
    end
 
+   def test_sound_send_to_node
+     send = LinkList.new("dee do dee")
+     assert_equal "dee" "do" "dee", send.node
+   end
+
 end

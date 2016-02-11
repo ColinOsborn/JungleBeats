@@ -15,8 +15,8 @@ class NodeTest < Minitest::Test
   end
 
   def test_node_can_initialize_w_data
-    d = Node.new(2)
-    assert_equal 2, d.data
+    d = Node.new("test test")
+    assert_equal "test test", d.data
   end
 
   def test_node_link
@@ -31,5 +31,7 @@ class LinkListTest < Minitest::Test
      assert_equal "test", start.head
    end
 
-   
+   def
+   end
+
 end
